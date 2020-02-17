@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JonClayton.Packages.HelloWorld", "src\JonClayton.Packages\HelloWorld\HelloWorld.csproj", "{B52E5D03-54B4-493C-9315-868E84EDFC39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JonClayton.Packages.Tests", "tests\JonClayton.Packages.Tests\Tests.csproj", "{0A189FE0-DDE2-445F-BCFD-8D14ACC19532}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B52E5D03-54B4-493C-9315-868E84EDFC39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B52E5D03-54B4-493C-9315-868E84EDFC39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B52E5D03-54B4-493C-9315-868E84EDFC39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B52E5D03-54B4-493C-9315-868E84EDFC39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A189FE0-DDE2-445F-BCFD-8D14ACC19532}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A189FE0-DDE2-445F-BCFD-8D14ACC19532}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A189FE0-DDE2-445F-BCFD-8D14ACC19532}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A189FE0-DDE2-445F-BCFD-8D14ACC19532}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
