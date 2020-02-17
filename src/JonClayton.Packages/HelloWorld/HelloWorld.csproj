@@ -5,4 +5,14 @@
         <RootNamespace>JonClayton.Packages.HelloWorld</RootNamespace>
     </PropertyGroup>
 
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <PackageId>JonClayton.Packages.HellowWorld</PackageId>
+        <Version>0.0.1</Version>
+        <Authors>JonClayton</Authors>
+        <Company>Clayton Parking Management</Company>
+        <PackageDescription>This package adds Hello World</PackageDescription>
+        <RepositoryUrl>https://github.com/jonclayton/jonclaytonpackages</RepositoryUrl>
+    </PropertyGroup>
+    
 </Project>
