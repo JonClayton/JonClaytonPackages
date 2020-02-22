@@ -1,4 +1,4 @@
-﻿using System;
+﻿using Newtonsoft.Json;
 
 namespace JonClayton.Packages.HelloWorld
 {
@@ -6,7 +6,8 @@ namespace JonClayton.Packages.HelloWorld
     {
         public static string Greet(string name)
         {
-            return "Greetings " + name;
+            var obj = new { greetings = name };
+            return JsonConvert.SerializeObject(obj);
         }
     }
 }

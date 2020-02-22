@@ -10,7 +10,7 @@ namespace JonClayton.Packages.Tests.HelloWorld
         [TestMethod]
         public void GreetingsWorks()
         {
-            Communication.Greet("Earthling").Should().Be("Greetings Earthling");
+            Communication.Greet("Earthling").Should().Be("{\"greetings\":\"Earthling\"}");
         }
     }
 }
