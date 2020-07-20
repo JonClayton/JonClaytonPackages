@@ -33,5 +33,5 @@ jjobs:
 
       - name: publish to Github Package Registry
         run |
-        dotnet pack -c Release
-        dotnet nuget push ./bin/Release/*.nupkg
+          dotnet pack -c Release
+          dotnet nuget push ./bin/Release/*.nupkg
