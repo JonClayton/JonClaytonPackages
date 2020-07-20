@@ -30,8 +30,3 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           path-to-lcov:  ./tests/UnitTests/TestResults/coverage.info
-
-      - name: publish to Github Package Registry
-        run |
-          dotnet pack -c Release
-          dotnet nuget push ./bin/Release/*.nupkg 
