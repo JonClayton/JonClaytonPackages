@@ -3,7 +3,7 @@ on:
   push:
     branches:
       - main
-jjobs:
+jobs:
   build:
     runs-on: ubuntu-latest
     env:
