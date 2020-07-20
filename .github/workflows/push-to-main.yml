@@ -1,0 +1,37 @@
+name: Push to Main
+on:
+  push:
+    branches:
+      - main
+jjobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      NAMESPACE: marathon
+    # unit tests must be in /tests/UnitTests project  
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@master
+
+      - name: Install .NET Core 3.1
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 3.1.302
+          source-url: https://nuget.pkg.github.com/arundo/index.json
+        env:
+          NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+      - name: Test and save test results
+        run: dotnet test /p:CollectCoverage=true /p:CoverletOutput=TestResults/ /p:CoverletOutputFormat=lcov
+
+      - name: Send Test results to Coveralls
+        uses: coverallsapp/github-action@master
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path-to-lcov:  ./tests/UnitTests/TestResults/coverage.info
+
+      - name: publish to Github Package Registry
+        run |
+        dotnet pack -c Release
+        dotnet nuget push ./bin/Release/*.nupkg

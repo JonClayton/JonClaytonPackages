@@ -1,14 +1,9 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-
-    <PropertyGroup>
-        <TargetFramework>netcoreapp3.1</TargetFramework>
-        <RootNamespace>JonClayton.Packages.HelloWorld</RootNamespace>
-    </PropertyGroup>
+<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <TargetFramework>netcoreapp3.1</TargetFramework>
         <PackageId>JonClayton.Packages.HelloWorld</PackageId>
-        <Version>0.0.2</Version>
+        <Version>0.0.3</Version>
         <Authors>JonClayton</Authors>
         <Company>Clayton Parking Management</Company>
         <PackageDescription>This package adds Hello World</PackageDescription>
@@ -18,5 +13,5 @@
     <ItemGroup>
       <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
     </ItemGroup>
-    
+
 </Project>

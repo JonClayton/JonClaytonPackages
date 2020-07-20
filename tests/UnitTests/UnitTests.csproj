@@ -17,6 +17,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\src\JonClayton.Packages\HelloWorld\HelloWorld.csproj" />
+      <ProjectReference Include="..\..\src\Project\Project.csproj" />
     </ItemGroup>
 </Project>
