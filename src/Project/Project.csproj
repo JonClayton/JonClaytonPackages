@@ -3,7 +3,7 @@
     <PropertyGroup>
         <TargetFramework>netcoreapp3.1</TargetFramework>
         <PackageId>JonClayton.Packages.HelloWorld</PackageId>
-        <Version>0.0.3</Version>
+        <Version>0.0.4</Version>
         <Authors>JonClayton</Authors>
         <Company>Clayton Parking Management</Company>
         <PackageDescription>This package adds Hello World</PackageDescription>

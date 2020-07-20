@@ -9,5 +9,7 @@ namespace JonClayton.Packages.HelloWorld
             var obj = new { greetings = name };
             return JsonConvert.SerializeObject(obj);
         }
+
+        public static bool IsNeedsTesting() => true;
     }
 }
