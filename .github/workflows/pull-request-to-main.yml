@@ -4,13 +4,13 @@ on:
     branches:
       - main
 jobs:
-  build:
+  build_test_pr:
     runs-on: ubuntu-latest
     env:
       NAMESPACE: marathon
     # unit tests must be in /tests/UnitTests project  
 
-    steps:      
+    steps:
       - name: Checkout repo
         uses: actions/checkout@master
 
@@ -30,3 +30,8 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           path-to-lcov:  ./tests/UnitTests/TestResults/coverage.info
+
+      - name: publish to Github Package Registry
+        run: |
+          dotnet pack -c Release -o release
+          dotnet nuget push release/*.nupkg
